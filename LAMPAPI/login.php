@@ -3,7 +3,7 @@
     $inData = getRequestInfo();    
 
     // connect to database
-    $conn = new mysqli("localhost", "root", getenv("SQL_PW"), "uride");
+    $conn = new mysqli("localhost", "dbuser", "j20cdh32sajcpo", "uride");
 
     // check database connection status
     if ($conn->connect_error) {
@@ -22,10 +22,6 @@
 
         // Check if the login is valid
         if ($row = $result->fetch_assoc()) {
-            $stmt = $conn->prepare("UPDATE Users SET datelastloggedin = CURRENT_TIMESTAMP() WHERE email=? AND password=?");
-            $stmt->bind_param("ss", $inData["email"], $inData["password"]);
-            $stmt->execute();
-
             returnWithInfo($row['id'], $row['firstname'], $row['lastname']);
         }
         else {

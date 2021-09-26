@@ -3,7 +3,7 @@
     $inData = getRequestInfo();    
 
     // connect to database
-    $conn = new mysqli("localhost", "root", getenv("SQL_PW"), "uride");
+    $conn = new mysqli("localhost", "dbuser", "j20cdh32sajcpo", "uride");
 
     // check database connection status
     if ($conn->connect_error) {

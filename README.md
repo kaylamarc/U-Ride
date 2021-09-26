@@ -11,10 +11,11 @@ A ShellHacks 2021 project by **Kayla Marcantonio**, **Nathan Lim**, **Nicholas Y
 - **Nathan Lim** (UCF)
 - **Nicholas Yardich** (UCF)
 # Built With
+- Google Maps API
+- Google Places API
 - LAMP Stack
 - HTML/CSS/JavaScript
 - MySQL
--
 
 # Documentation
 

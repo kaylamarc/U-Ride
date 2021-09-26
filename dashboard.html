@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="description" content="U-Ride" />
+    <meta charset="utf-8" />
+    <title>U-Ride</title>
+    <!-- <script src="js/dashboard.js"></script> -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/edcdcee58e.js" crossorigin="anonymous"></script>
+    <script src="/js/dashboard.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJIH2mj6gyBcJ8DfCgPQyDe3olaoURqMQ&libraries=places&callback=initAutocomplete"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="section-title">U-Ride</h1>
+        <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i></button>
+    </div>
+    <div class="content">
+        <div class="split left">
+            <!-- Where To? -->
+            <div id="whereTo">
+                <h2>Where to?</h2>
+                <div class="whereDiv">
+                    <form class="whereField">
+                        <div class="fields">
+                            <input type="text" id="origin" name="origin" placeholder="origin">
+                            <input type="text" id="destination" name="destination" placeholder="destination">
+                            <input type="time" id="startTime" name="startTime" placeholder="startTime">
+                        </div>
+                        <div id="checkboxes">
+                            <input type="checkbox" id="Mon" name="Mon" value="Monday">
+                            <label for="Mon">Monday</label><br>
+                            <input type="checkbox" id="Tues" name="Tues" value="Tuesday">
+                            <label for="Tues">Tuesday</label><br>
+                            <input type="checkbox" id="Wed" name="Wed" value="Wednesday">
+                            <label for="Wed">Wednesday</label><br>
+                            <input type="checkbox" id="Thur" name="Thur" value="Thursday">
+                            <label for="Thur">Thursday</label><br>
+                            <input type="checkbox" id="Fri" name="Fri" value="Friday">
+                            <label for="Fri">Friday</label><br>
+                        </div>
+                        <button type="submit" id="find">Find!</button>
+                    </form>
+                </div>
+            </div>
+            <!-- GOOGLE MAP -->
+            <div id="map">
+                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJIH2mj6gyBcJ8DfCgPQyDe3olaoURqMQ
+                &q=UCF">
+                </iframe>
+            </div>
+        </div>
+        <div class="split right">
+            <!-- Pools You're In -->
+            <div id="poolsIn">
+                <h2>Carpools You're In 😎</h2>
+                <table id="pools-in-tbl">
+                    <thead>
+                        <th>Origin</th>
+                        <th>Destination</th>
+                        <th>Time</th>
+                        <th>Days</th>
+                        <th>Seats</th>
+                    </thead>
+                    <tbody>
+                        <td>Here</td>
+                        <td>There</td>
+                        <td>5:55 P.M.</td>
+                        <td>MWF</td>
+                        <td>2/4</td>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Pools Found -->
+            <div class="poolsFound">
+                <h2>Carpools We've Found 😁</h2>
+                <table id="pools-found-tbl">
+                    <thead>
+                        <th>Origin</th>
+                        <th>Destination</th>
+                        <th>Time</th>
+                        <th>Days</th>
+                        <th>Seats</th>
+                    </thead>
+                    <tbody>
+                        <td>Here</td>
+                        <td>There</td>
+                        <td>5:55 P.M.</td>
+                        <td>MWF</td>
+                        <td>2/4</td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

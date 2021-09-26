@@ -1,0 +1,194 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5%;
+    background-color: #355070;
+    font-family: 'Racing Sans One', cursive;
+    box-shadow:  0px 6px 10px 5px grey;
+}
+
+body {
+	margin: 0;
+	background: #FCF3EE;
+}
+
+.header h1 {
+    font-family: 'Racing Sans One', cursive;
+    margin: 0;
+    padding-left: 2%;
+    color: #E56B6F;
+    font-size: 50px;
+}
+
+#logoutBtn {
+    padding: 0;
+    background-color: #E56B6F;
+    color: white;
+    border-radius: 15px;
+    width: 2.5em;
+    height: 2.25em;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#logoutBtn :hover {
+    background-color: #b56576;
+}
+
+form {
+    margin: 20px;
+}
+
+.whereDiv {
+    font-family: 'Racing Sans One', cursive;
+    background-color: #6D597A;
+    border-radius: 15px;
+    width: 60%;
+    border: 1px solid black;
+}
+
+h2 {
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#find {
+    font-family: 'Racing Sans One', cursive;
+    border-radius: 15px;
+    color: #FFFFFF;
+    background-color: #E56B6F;
+    font-size: 20px;
+    font-family: inherit;
+    padding-top: 3px;
+}
+
+#find :active :hover {
+    background-color: #b56576;
+}
+
+#checkboxes {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #FFFFFF;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    align-items:inherit;
+}
+
+input[type="text"],input[type="time"] {
+    font-family: 'Racing Sans One', cursive;
+    border-radius: 2px;
+    background: #eef9fe;
+    border: 1px solid #cddbef;
+	font-size: 16px;
+    margin-block-end: 5px;
+}
+
+.fields {
+    font-family: 'Racing Sans One', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+#whereTo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h2 {
+    color:black;
+    font-family: 'Racing Sans One', cursive;
+
+}
+
+table th {
+    background-color: #6D597A;
+    border-bottom: 3px solid #b56576;
+    color: #FFFFFF;
+}
+
+table {
+    background-color: #FFFF;
+    border-collapse: collapse;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid black ;
+    align-self: center;
+}
+
+td {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #b56576;
+    color: black;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    right: 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    left: 0;
+}
+
+.poolsFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}   
+
+#poolsIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#pools-found-tbl {
+    width: 80%;
+}
+
+#pools-in-tbl {
+    width: 80%;
+}
+
+#map {
+    border: 5px solid #6D597A;
+}

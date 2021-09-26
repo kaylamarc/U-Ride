@@ -1,5 +1,5 @@
 # U-Ride 🚗
-[u-ride.tech](u-ride.tech)
+[u-ride.tech](http://u-ride.tech/)
 
 U-Ride is a carpooling app for College students to get to and from campus.
 Focused on scheduling it matches you to students nearby with similar schedules to alleviate campus parking and emissions.
